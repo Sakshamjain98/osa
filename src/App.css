@@ -1,0 +1,51 @@
+.App {
+    position: relative;
+    overflow-x: clip;
+}
+
+.App > :nth-child(1) {
+    background: var(--black);
+    position: relative;
+}
+
+.white-gradient {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: rgba(255, 255, 255, 0.522);
+    filter: blur(100px);
+    border-radius: 100px;
+}
+
+/* Responsive adjustments for the white gradient background */
+@media (max-width: 1024px) {
+    .white-gradient {
+        width: 18rem;
+        height: 18rem;
+        filter: blur(90px);
+    }
+}
+
+@media (max-width: 768px) {
+    .white-gradient {
+        width: 15rem;
+        height: 15rem;
+        filter: blur(80px);
+    }
+}
+
+@media (max-width: 640px) {
+    .white-gradient {
+        width: 12rem;
+        height: 12rem;
+        filter: blur(70px);
+    }
+}
+
+@media (max-width: 480px) {
+    .white-gradient {
+        width: 10rem;
+        height: 10rem;
+        filter: blur(60px);
+    }
+}

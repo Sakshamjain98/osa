@@ -1,0 +1,482 @@
+/* ContactAndFooter.css */
+/* Prefixed all classes with 'osa-' (Old Standford Associates) to scope the CSS */
+
+/* Variables */
+:root {
+    --osa-black: #131110;
+    --osa-dark-gray: #1e1d1c;
+    --osa-medium-gray: #333;
+    --osa-light-gray: #71797E; /* Steel Gray for bold footer text */
+    --osa-white: #fff;
+    --osa-off-white: #f5f5f5;
+    --osa-blue: #4066ff;
+    --osa-dark-blue: #2949c6;
+    --osa-text-gray: #999;
+    --osa-form-bg: #1a1a1a;
+    --osa-input-bg: #222;
+    --osa-blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  }
+  
+  /* Component Container */
+  .osa-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--osa-black);
+    color: var(--osa-white);
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  /* Main content */
+  .osa-main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-grow: 1;
+  }
+  
+  /* Contact information section */
+  .osa-contact-info {
+    margin-bottom: 40px;
+  }
+  
+  .osa-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--osa-white);
+    margin-bottom: 16px;
+  }
+  
+  .osa-subtext {
+    color: var(--osa-text-gray);
+    font-size: 1rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .osa-info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .osa-info-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .osa-icon-container {
+    background-color: var(--osa-medium-gray);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+  }
+  
+  .osa-icon {
+    width: 22px;
+    height: 22px;
+    color: var(--osa-blue);
+  }
+  
+  .osa-info-content {
+    flex: 1;
+  }
+  
+  .osa-info-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--osa-white);
+  }
+  
+  .osa-info-text {
+    color: var(--osa-text-gray);
+    font-size: 0.95rem;
+  }
+  
+  /* Contact form */
+  .osa-contact-form {
+    width: 100%;
+  }
+  
+  .osa-form-container {
+    background-color: var(--osa-form-bg);
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .osa-form-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--osa-white);
+  }
+  
+  .osa-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .osa-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .osa-form-label {
+    color: var(--osa-text-gray);
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+  }
+  
+  .osa-form-input,
+  .osa-form-textarea {
+    width: 100%;
+    background-color: var(--osa-input-bg);
+    border: 1px solid var(--osa-medium-gray);
+    border-radius: 6px;
+    padding: 12px 14px;
+    color: var(--osa-white);
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* resize the textarea */
+    resize: none;
+  }
+  
+  .osa-form-input:focus,
+  .osa-form-textarea:focus {
+    outline: none;
+    border-color: var(--osa-blue);
+    box-shadow: 0 0 0 2px rgba(64, 102, 255, 0.2);
+  }
+  
+  .osa-form-textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+  
+  .osa-submit-button {
+    background: var(--osa-blue-gradient);
+    color: var(--osa-white);
+    border: none;
+    border-radius: 6px;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .osa-submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(64, 102, 255, 0.4);
+  }
+  
+  .osa-submit-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Footer */
+  .osa-footer {
+    background-color: var(--osa-black);
+    padding: 40px 20px;
+    width: 100%;
+  }
+  
+  .osa-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .osa-footer-divider {
+    height: 1px;
+    background-color: var(--osa-medium-gray);
+    margin-bottom: 30px;
+  }
+  
+  .osa-footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .osa-brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--osa-light-gray);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  
+  .osa-brand-tagline {
+    color: var(--osa-text-gray);
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+  }
+  
+  .osa-powered-by {
+    color: var(--osa-blue);
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  
+  .osa-footer-heading {
+    color: var(--osa-white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    /* border: 1px solid white; */
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  .osa-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid white; */
+    display: flex;
+    /* width: max-content; */
+    flex-wrap: wrap;
+  }
+  
+  .osa-links-list li {
+    margin-bottom: 10px;
+    margin: 20px;
+  }
+  
+  .osa-footer-link {
+    color: var(--osa-text-gray);
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+    font-size: 0.95rem;
+  }
+  
+  .osa-hover-effect::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--osa-blue);
+    transition: width 0.3s;
+  }
+  
+  .osa-hover-effect:hover {
+    color: var(--osa-white);
+  }
+  
+  .osa-hover-effect:hover::after {
+    width: 100%;
+  }
+  
+  .osa-footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--osa-medium-gray);
+  }
+  
+  .osa-copyright {
+    color: var(--osa-text-gray);
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+  }
+  
+  .osa-social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .osa-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    color: var(--osa-text-gray);
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .osa-social-icon:hover {
+    color: var(--osa-white);
+  }
+  
+  .osa-social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Animations */
+  @keyframes osaFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes osaSlideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes osaPulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(64, 102, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(64, 102, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(64, 102, 255, 0);
+    }
+  }
+  
+  @keyframes osaBounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-8px);
+    }
+    60% {
+      transform: translateY(-4px);
+    }
+  }
+  
+  .osa-fade-in {
+    animation: osaFadeIn 1s ease-out forwards;
+  }
+  
+  .osa-slide-in-left {
+    animation: osaSlideInLeft 0.8s ease-out forwards;
+  }
+  
+  .osa-pulse {
+    animation: osaPulse 2s infinite;
+  }
+  
+  .osa-bounce {
+    animation: osaBounce 2s ease infinite;
+  }
+  
+  /* Enhanced Responsive styles */
+  /* Extra small devices (phones, 480px and down) */
+  @media only screen and (max-width: 480px) {
+    .osa-heading {
+      font-size: 1.8rem;
+    }
+    
+    .osa-form-container {
+      padding: 16px;
+    }
+    
+    .osa-brand-name {
+      font-size: 1.3rem;
+    }
+    
+    .osa-footer {
+      padding: 30px 16px;
+    }
+    
+    .osa-submit-button {
+      padding: 12px 20px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 481px to 767px) */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .osa-heading {
+      font-size: 2rem;
+    }
+    
+    .osa-brand-name {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px to 991px) */
+  @media only screen and (min-width: 768px) {
+    .osa-main-content {
+      flex-direction: row;
+      gap: 40px;
+    }
+  
+    .osa-contact-info {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  
+    .osa-contact-form {
+      flex: 1;
+    }
+  
+    .osa-footer-content {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  
+    .osa-footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .osa-copyright {
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px to 1199px) */
+  @media only screen and (min-width: 992px) {
+    .osa-heading {
+      font-size: 2.5rem;
+    }
+    
+    .osa-brand-name {
+      font-size: 1.7rem;
+    }
+    
+    .osa-form-container {
+      padding: 30px;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .osa-main-content {
+      padding: 60px 20px;
+    }
+    
+    .osa-heading {
+      font-size: 3rem;
+    }
+    
+    .osa-brand-name {
+      font-size: 1.8rem;
+    }
+    
+    .osa-footer {
+      padding: 60px 20px;
+    }
+  }

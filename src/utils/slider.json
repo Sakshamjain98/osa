@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Multifamily Residential",
+    "price": "47,043",
+    "detail": "Arizona, USA",
+    "image": "./p1.png"
+  },
+  {
+    "name": "Precast Residential Villa",
+    "price": "66,353",
+    "detail": "Riyad, Saudi Arabia",
+    "image": "./p2.avif"
+  },
+  {
+    "name": "Residential & Commercial Building",
+    "price": "47,043",
+    "detail": "California, USA",
+    "image": "./p4.avif"
+  },
+  {
+    "name": "Commercial Tower",
+    "price": "Unknown",
+    "detail": "Abu Dhabi, UAE",
+    "image": "./p8.png"
+  },
+  {
+    "name": "Bay Vista Clubhouse",
+    "price": "66,353",
+    "detail": "Bremerton, WA, USA",
+    "image": "./p5.jpeg"
+  },
+  {
+    "name": "Meridian Clubhouse",
+    "price": "35,853",
+    "detail": "Edgewood, WA",
+    "image": "./p6.jpg"
+  },
+  {
+    "name": "Futuristic Hotel Tower",
+    "price": "Unknown",
+    "detail": "Shanghai, China",
+    "image": "./p7.png"
+  },
+  {
+    "name": "Residential Modern Villa",
+    "price": "Unknown",
+    "detail": "Los Angeles, USA",
+    "image": "./p9.png"
+  }
+]

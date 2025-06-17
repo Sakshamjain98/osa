@@ -1,0 +1,62 @@
+/* About Us Component Responsive Styles */
+/* Add this to a separate CSS file or your global styles */
+
+@media (max-width: 1024px) {
+    .company-intro {
+      flex-direction: column-reverse !important;
+    }
+    
+    .company-graphic {
+      width: 80% !important;
+      margin-bottom: 2rem !important;
+    }
+    
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-section {
+      padding: 4rem 0 !important;
+    }
+    
+    .header h2 {
+      font-size: 2.5rem !important;
+    }
+    
+    .company-intro-text p {
+      font-size: 1.1rem !important;
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr !important;
+    }
+    
+    .cta p {
+      font-size: 1.3rem !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 1.5rem !important;
+    }
+    
+    .header h2 {
+      font-size: 2rem !important;
+    }
+    
+    .company-intro-text p {
+      font-size: 1rem !important;
+    }
+    
+    .cta p {
+      font-size: 1.1rem !important;
+    }
+    
+    .cta button {
+      padding: 0.8rem 2rem !important;
+      font-size: 1rem !important;
+    }
+  }

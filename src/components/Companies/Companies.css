@@ -1,0 +1,115 @@
+.c-wrapper {
+    padding: 2rem 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .c-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .c-heading h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f3e72;
+    margin: 0;
+  }
+  
+  /* Main marquee container */
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    --marquee-duration: 20s; /* Default value, overridden by inline style */
+  }
+  
+  /* Track that contains both instances of content */
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll var(--marquee-duration) linear infinite;
+  }
+  
+  /* Individual content blocks */
+  .marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem 0;
+    /* border: 1px solid #e0e0e0; */
+    margin-right: 4rem;
+  }
+  
+  /* Company logo styling */
+  .company-logo {
+    width: 8rem;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    /* border: 1px solid #e0e0e0; */
+  }
+  
+  /* Animation keyframes */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Move exactly the width of one marquee-content */
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Pause animation on hover (optional) */
+  .marquee-container:hover .marquee-track {
+    animation-play-state: paused;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .company-logo {
+      width: 7rem;
+    }
+    
+    .marquee-content {
+      gap: 3.5rem;
+    }
+    
+    .c-heading h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .company-logo {
+      width: 6rem;
+    }
+    
+    .marquee-content {
+      gap: 3rem;
+    }
+    
+    .c-heading h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .company-logo {
+      width: 5rem;
+    }
+    
+    .marquee-content {
+      gap: 2.5rem;
+    }
+    
+    .c-heading h2 {
+      font-size: 1.4rem;
+    }
+    
+    .marquee-container {
+      --marquee-duration: 15s; /* Slightly faster on mobile */
+    }
+  }
