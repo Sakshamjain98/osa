@@ -121,6 +121,7 @@ const ContactAndFooter = () => {
               <button 
                 type="submit" 
                 className="osa-submit-button osa-pulse"
+                
               >
                 Send Message
               </button>
@@ -137,10 +138,10 @@ const ContactAndFooter = () => {
           <div className="osa-footer-content">
             {/* Brand section */}
             <div className="osa-brand osa-fade-in">
-              <h2 className="osa-brand-name">OLD STANDFORD ASSOCIATES</h2>
+              <h2 className="osa-brand-name">OSAIBM</h2>
               <p className="osa-brand-tagline">Delivering excellence in consultation and strategic solutions since 1995.</p>
-              <p className="osa-powered-by">
-                <a href='https://www.dalovinium.in/' target='_blank'>POWERED BY DALOVINIUM</a></p>
+             
+                
             </div>
             
             {/* Quick Links */}
@@ -168,7 +169,7 @@ const ContactAndFooter = () => {
           </div>
           
           <div className="osa-footer-bottom">
-            <p className="osa-copyright">© 2025 Old Standford Associates. All rights reserved.</p>
+            <p className="osa-copyright">© 2025 OSAIBM Associates. All rights reserved.</p>
             <div className="osa-social-icons">
               <a href="#" className="osa-social-icon osa-twitter osa-bounce">
                 <svg fill="currentColor" viewBox="0 0 24 24">
