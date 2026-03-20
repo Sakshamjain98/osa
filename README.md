@@ -1,3 +1,35 @@
+# Homyz — Client Demo (View Only)
+
+Short demo client for a real-estate site built with React and Vite.
+
+IMPORTANT: This is a client-side demo project for viewing purposes only. Do not
+use this repository or its contents in production, for distribution, or as a
+trusted source of functionality.
+
+What this repo contains
+- Frontend React app (client only)
+- Vite build config and a small Nginx Docker setup to serve the production build
+
+Quick local view (Docker)
+1. Build and start the container:
+
+```bash
+docker compose up --build -d
+```
+
+2. Open: http://localhost:3000
+
+Stop and remove containers:
+
+```bash
+docker compose down
+```
+
+Notes
+- This repository does not include a backend or production-ready security
+  configurations. It is provided for demonstration and review only.
+- If you need additional documentation or want this prepared for production,
+  contact the maintainer before using it.
 # Real Estate React App 
 
 A modern real estate marketplace built with React.js, featuring property listings, animations, and interactive components.
