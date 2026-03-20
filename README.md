@@ -35,7 +35,7 @@ Notes
 A modern real estate marketplace built with React.js, featuring property listings, animations, and interactive components.
 
 ## 🌐 Live Demo
-[View Live Demo](https://ali-homyz.netlify.app/)
+[View Live Demo](https://osa-opal.vercel.app/)
 
 ![Real Estate Demo](./public/Screenshot-homyz.png)
 
@@ -60,7 +60,7 @@ A modern real estate marketplace built with React.js, featuring property listing
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/daisy-ali/homyz
+   git clone https://github.com/sakshamjain98/osa.git
    ```
 2. **Install dependencies**
    ```bash
