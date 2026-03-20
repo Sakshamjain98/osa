@@ -35,7 +35,7 @@ Notes
 A modern real estate marketplace built with React.js, featuring property listings, animations, and interactive components.
 
 ## 🌐 Live Demo
-[View Live Demo](https://www.osa.sakshamjain.codes)
+[View Live Demo](http://osa.sakshamjain.codes/)
 
 ![Real Estate Demo](./public/Screenshot-homyz.png)
 
